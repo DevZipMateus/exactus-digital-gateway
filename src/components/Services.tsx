@@ -1,6 +1,8 @@
 import { FileSearch, Calculator, Search, FileText, TrendingUp, BarChart } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import serviceLicitacao from "@/assets/service-licitacao.jpg";
+import serviceTributaria from "@/assets/service-tributaria.jpg";
 
 const Services = () => {
   const licitacoesServices = [
@@ -52,6 +54,15 @@ const Services = () => {
             <FileSearch className="w-10 h-10 text-primary mr-4" />
             <h3 className="text-3xl font-bold text-foreground">Consultoria em licitações</h3>
           </div>
+          
+          <div className="max-w-5xl mx-auto mb-10">
+            <img 
+              src={serviceLicitacao} 
+              alt="Consultoria em licitações e contratos públicos"
+              className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
+            />
+          </div>
+
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
             {licitacoesServices.map((service, index) => (
               <Card key={index} className="border-primary/20 hover:border-primary transition-all hover:shadow-lg">
@@ -73,6 +84,15 @@ const Services = () => {
             <Calculator className="w-10 h-10 text-primary mr-4" />
             <h3 className="text-3xl font-bold text-foreground">Consultoria tributária</h3>
           </div>
+          
+          <div className="mb-10">
+            <img 
+              src={serviceTributaria} 
+              alt="Consultoria e auditoria tributária"
+              className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
+            />
+          </div>
+
           <Card className="border-primary/20 shadow-lg">
             <CardHeader>
               <CardTitle className="text-2xl text-center">Consultoria e auditoria tributária</CardTitle>
