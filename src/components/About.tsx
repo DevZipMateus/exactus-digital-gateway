@@ -1,6 +1,5 @@
 import { Target, Eye, Award } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import aboutMission from "@/assets/about-mission.jpg";
 
 const About = () => {
   const values = [
@@ -21,13 +20,16 @@ const About = () => {
           </p>
         </div>
 
-        {/* Image Section */}
+        {/* Video Section */}
         <div className="max-w-5xl mx-auto mb-16">
-          <img 
-            src={aboutMission} 
-            alt="Missão e valores da Exactus Consultoria"
+          <video 
+            src="/video.mp4"
+            controls
             className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
-          />
+            aria-label="Vídeo sobre a Exactus Consultoria"
+          >
+            Seu navegador não suporta a reprodução de vídeos.
+          </video>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 mb-16 max-w-6xl mx-auto">
