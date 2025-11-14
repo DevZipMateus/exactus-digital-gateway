@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
+import logo from "@/assets/logo.png";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -25,6 +26,11 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center text-white">
+          <img 
+            src={logo} 
+            alt="Exactus Consultoria & Auditoria" 
+            className="h-24 md:h-32 mx-auto mb-8 animate-fade-in"
+          />
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight animate-fade-in">
             Exactus Consultoria & Auditoria
           </h1>
