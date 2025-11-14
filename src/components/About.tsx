@@ -9,11 +9,11 @@ const About = () => {
   ];
 
   return (
-    <section id="sobre" className="py-20 bg-background">
+    <section id="sobre" className="py-12 md:py-16 lg:py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Sobre a Exactus</h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
+        <div className="max-w-4xl mx-auto text-center mb-10 md:mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-foreground">Sobre a Exactus</h2>
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed px-2">
             A Exactus Consultoria & Auditoria foi idealizada em 2006 e fundada em 2007 pelo seu sócio 
             administrador Luís Alberto Santos Brito, contador, pós graduado em gestão tributária e 
             consultor de licitações e contratos.
@@ -21,21 +21,21 @@ const About = () => {
         </div>
 
         {/* Video Section */}
-        <div className="max-w-5xl mx-auto mb-16">
+        <div className="max-w-5xl mx-auto mb-10 md:mb-16">
           <video 
             src="/video.mp4"
             autoPlay
             loop
             muted
             playsInline
-            className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
+            className="w-full h-48 sm:h-64 md:h-80 lg:h-96 object-cover rounded-lg shadow-lg"
             aria-label="Vídeo sobre a Exactus Consultoria"
           >
             Seu navegador não suporta a reprodução de vídeos.
           </video>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 mb-16 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-12 mb-10 md:mb-16 max-w-6xl mx-auto">
           <Card className="border-primary/20 shadow-md hover:shadow-lg transition-shadow">
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold mb-4 text-primary">Missão</h3>
@@ -60,8 +60,8 @@ const About = () => {
         </div>
 
         <div>
-          <h3 className="text-3xl font-bold text-center mb-12 text-foreground">Nossos valores</h3>
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <h3 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12 text-foreground">Nossos valores</h3>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
             {values.map((value, index) => (
               <Card key={index} className="text-center border-primary/20 hover:border-primary transition-colors shadow-sm hover:shadow-md">
                 <CardContent className="p-8">

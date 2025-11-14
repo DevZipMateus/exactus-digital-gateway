@@ -39,31 +39,31 @@ const Services = () => {
   };
 
   return (
-    <section id="servicos" className="py-20 bg-muted/30">
+    <section id="servicos" className="py-12 md:py-16 lg:py-20 bg-muted/30">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Nossos serviços</h2>
-          <p className="text-lg text-muted-foreground">
+        <div className="max-w-4xl mx-auto text-center mb-10 md:mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-foreground">Nossos serviços</h2>
+          <p className="text-base md:text-lg text-muted-foreground px-2">
             Soluções completas para sua empresa vencer em licitações e otimizar sua gestão tributária
           </p>
         </div>
 
         {/* Consultoria em Licitações */}
-        <div className="mb-20">
-          <div className="flex items-center justify-center mb-10">
-            <FileSearch className="w-10 h-10 text-primary mr-4" />
-            <h3 className="text-3xl font-bold text-foreground">Consultoria em licitações</h3>
+        <div className="mb-12 md:mb-20">
+          <div className="flex flex-col sm:flex-row items-center justify-center mb-8 md:mb-10 gap-2">
+            <FileSearch className="w-8 h-8 md:w-10 md:h-10 text-primary" />
+            <h3 className="text-2xl md:text-3xl font-bold text-foreground text-center">Consultoria em licitações</h3>
           </div>
           
-          <div className="max-w-5xl mx-auto mb-10">
+          <div className="max-w-5xl mx-auto mb-8 md:mb-10">
             <img 
               src={serviceLicitacao} 
               alt="Consultoria em licitações e contratos públicos"
-              className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
+              className="w-full h-48 sm:h-64 md:h-80 lg:h-96 object-cover rounded-lg shadow-lg"
             />
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-7xl mx-auto">
             {licitacoesServices.map((service, index) => (
               <Card key={index} className="border-primary/20 hover:border-primary transition-all hover:shadow-lg">
                 <CardHeader>
@@ -80,16 +80,16 @@ const Services = () => {
 
         {/* Consultoria Tributária */}
         <div className="max-w-4xl mx-auto">
-          <div className="flex items-center justify-center mb-10">
-            <Calculator className="w-10 h-10 text-primary mr-4" />
-            <h3 className="text-3xl font-bold text-foreground">Consultoria tributária</h3>
+          <div className="flex flex-col sm:flex-row items-center justify-center mb-8 md:mb-10 gap-2">
+            <Calculator className="w-8 h-8 md:w-10 md:h-10 text-primary" />
+            <h3 className="text-2xl md:text-3xl font-bold text-foreground text-center">Consultoria tributária</h3>
           </div>
           
-          <div className="mb-10">
+          <div className="mb-8 md:mb-10">
             <img 
               src={serviceTributaria} 
               alt="Consultoria e auditoria tributária"
-              className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
+              className="w-full h-48 sm:h-64 md:h-80 lg:h-96 object-cover rounded-lg shadow-lg"
             />
           </div>
 

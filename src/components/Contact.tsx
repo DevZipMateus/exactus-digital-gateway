@@ -31,16 +31,16 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contato" className="py-20 bg-background">
+    <section id="contato" className="py-12 md:py-16 lg:py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Entre em contato</h2>
-          <p className="text-lg text-muted-foreground">
+        <div className="max-w-4xl mx-auto text-center mb-10 md:mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-foreground">Entre em contato</h2>
+          <p className="text-base md:text-lg text-muted-foreground px-2">
             Estamos prontos para ajudar sua empresa a crescer. Entre em contato conosco
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
+        <div className="grid sm:grid-cols-2 gap-4 md:gap-8 max-w-5xl mx-auto mb-8 md:mb-12">
           {contactInfo.map((info, index) => (
             <Card key={index} className="border-primary/20 hover:border-primary transition-colors shadow-sm hover:shadow-md">
               <CardContent className="p-6">
@@ -67,15 +67,15 @@ const Contact = () => {
           ))}
         </div>
 
-        <div className="text-center space-y-6">
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="text-center space-y-4 md:space-y-6">
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-2">
             <Button
               asChild
               size="lg"
-              className="bg-primary text-primary-foreground hover:bg-accent font-semibold"
+              className="bg-primary text-primary-foreground hover:bg-accent font-semibold w-full sm:w-auto"
             >
               <a href="https://wa.me/5571981606625" target="_blank" rel="noopener noreferrer">
-                <Phone className="mr-2" size={20} />
+                <Phone className="mr-2" size={18} />
                 Fale pelo WhatsApp
               </a>
             </Button>
@@ -83,18 +83,20 @@ const Contact = () => {
               asChild
               size="lg"
               variant="outline"
-              className="border-primary/60 text-primary hover:bg-primary hover:text-primary-foreground font-semibold"
+              className="border-primary/60 text-primary hover:bg-primary hover:text-primary-foreground font-semibold w-full sm:w-auto"
             >
               <a href="mailto:goldlicite@gmail.com">
-                <Mail className="mr-2" size={20} />
+                <Mail className="mr-2" size={18} />
                 Enviar email
               </a>
             </Button>
           </div>
           
-          <div className="flex items-center justify-center space-x-2 text-muted-foreground">
-            <Instagram size={20} className="text-primary" />
-            <span>Siga-nos no Instagram:</span>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-sm md:text-base text-muted-foreground px-4">
+            <div className="flex items-center gap-2">
+              <Instagram size={18} className="text-primary" />
+              <span>Siga-nos no Instagram:</span>
+            </div>
             <a
               href="https://instagram.com/licit_consultoria"
               target="_blank"
