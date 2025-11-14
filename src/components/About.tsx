@@ -1,5 +1,6 @@
 import { Target, Eye, Award } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import aboutMission from "@/assets/about-mission.jpg";
 
 const About = () => {
   const values = [
@@ -18,6 +19,15 @@ const About = () => {
             administrador Luís Alberto Santos Brito, contador, pós graduado em gestão tributária e 
             consultor de licitações e contratos.
           </p>
+        </div>
+
+        {/* Image Section */}
+        <div className="max-w-5xl mx-auto mb-16">
+          <img 
+            src={aboutMission} 
+            alt="Missão e valores da Exactus Consultoria"
+            className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
+          />
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 mb-16 max-w-6xl mx-auto">
