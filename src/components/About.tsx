@@ -24,7 +24,10 @@ const About = () => {
         <div className="max-w-5xl mx-auto mb-16">
           <video 
             src="/video.mp4"
-            controls
+            autoPlay
+            loop
+            muted
+            playsInline
             className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
             aria-label="Vídeo sobre a Exactus Consultoria"
           >
