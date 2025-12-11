@@ -9,7 +9,7 @@ const Services = () => {
     {
       icon: Search,
       title: "Busca de oportunidades",
-      description: "Localizamos e enviamos novas oportunidades de acordo com seu interesse. Você avalia, define e nos envia o edital para participação."
+      description: "Localizamos e enviamos novas oportunidades de acordo com seu interesse. Você,  irá avaliar, selecionar e enviar o edital para participação."
     },
     {
       icon: FileText,
