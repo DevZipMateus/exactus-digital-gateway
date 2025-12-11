@@ -14,7 +14,7 @@ const Services = () => {
     {
       icon: FileText,
       title: "Gestão de documentos",
-      description: "Identificamos e organizamos toda documentação que sua empresa necessitará para licitar."
+      description: "Identificamos e organizamos toda a documentação que sua empresa precisará para participar."
     },
     {
       icon: TrendingUp,
