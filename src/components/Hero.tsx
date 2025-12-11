@@ -32,7 +32,7 @@ const Hero = () => {
             className="h-20 md:h-28 lg:h-32 mx-auto mb-6 md:mb-8 animate-fade-in"
           />
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 leading-tight animate-fade-in px-2">
-            Exactus Consultoria & Auditoria
+            Exactus Consultoria de Licitação e Tributos
           </h1>
           <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-6 md:mb-8 font-light leading-relaxed animate-fade-in px-4" style={{ animationDelay: "0.2s" }}>
             Dados, estratégia e resultado — o novo jeito de vencer licitações
